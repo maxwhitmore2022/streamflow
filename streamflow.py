@@ -29,6 +29,6 @@ sites = ["10163000", "10155200", "10155500", "10154200", "10155000"]
 filename = Path(__file__).with_name("June-2021-Provo-River-Streamflow-Rates.csv")
 dates, flows = load_streamflow(filename)
 plot_streamflow(dates, flows, sites)
-
+plt.savefig("provo_streamflow.png", dpi=150, bbox_inches="tight")
 
 
